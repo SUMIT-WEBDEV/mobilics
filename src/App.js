@@ -6,7 +6,7 @@ function Table() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/users")
+    fetch("https://mobilics-delta.vercel.app/users")
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error(error));
